@@ -22,13 +22,18 @@ print "line 3: "; line3 = STDIN.gets.chomp()
 
 puts "I'm going to write these to the file."
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write("#{line1}\n#{line2}\n#{line3}\n")
 
 puts "And finally, we close it."
 target.close()
+
+puts "Do you want to read the file (#{filename}) you just created?"
+puts "If not, hit CTRL-C (^C)."
+puts "If so, press RETURN."
+print "? "
+STDIN.gets
+
+file_to_read = File.open(filename)
+
+puts file_to_read.read()
 
