@@ -1,0 +1,3 @@
+This is the first line of a file
+Now I'm typing a second line!
+Wow this is really neat!
